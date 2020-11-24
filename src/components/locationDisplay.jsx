@@ -1,9 +1,11 @@
 import React from "react";
+import {useLocation} from "react-router-dom";
 
 function LocationDisplay(props){
+    let location = useLocation();
     return(
         <>
-            {props.match.path}
+            {location.pathname}
         </>
     );
 }
