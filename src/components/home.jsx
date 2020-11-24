@@ -1,11 +1,11 @@
 import React from "react";
 import LocationDisplay from "./locationDisplay";
 
-function Home(props){
+function Home(){
     return(
         <>
             <h1>You are home</h1>
-            <LocationDisplay data-testid="location-display" {...props}/>
+            <LocationDisplay data-testid="location-display"/>
         </>
     );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import {useLocation} from "react-router-dom";
 
-function LocationDisplay(props){
+function LocationDisplay(){
     let location = useLocation();
     return(
         <>

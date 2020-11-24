@@ -5,7 +5,7 @@ function NoMatch(props){
     return(
         <>
             <h1>No Match</h1>
-            <LocationDisplay data-testid="location-display" {...props} />
+            <LocationDisplay data-testid="location-display" />
         </>
     );
 }
