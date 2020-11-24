@@ -1,5 +1,5 @@
 import React, {Component, useState} from "react";
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch, Link, Redirect } from "react-router-dom";
 import Home from "./home";
 import About from "./about";
 import NoMatch from "./noMatch";
@@ -15,7 +15,8 @@ class App extends Component {
                 <Switch>
                     <Route exact path="/about" component={About} />
                     <Route exact path="/" component={Home} />
-                    <Route component={NoMatch} />
+                    <Route exact path="/any-route" component={NoMatch} />
+                    <Redirect to={{pathname:"/any-route"}}/>
                 </Switch>
             </div>
         )
