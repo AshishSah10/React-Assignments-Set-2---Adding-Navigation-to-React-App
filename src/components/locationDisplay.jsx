@@ -3,7 +3,7 @@ import {useLocation} from "react-router-dom";
 
 
 function LocationDisplay(props){
-    const [location, setLocation] = React.useState(useLocation());
+    const location = useLocation();
     return(
         <>
             {location.pathname}
