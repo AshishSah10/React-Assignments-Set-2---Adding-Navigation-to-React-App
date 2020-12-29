@@ -33,5 +33,9 @@ class App extends Component {
     }
 }
 
-
 export default App;
+module.exports = {
+    Home: Home,
+    About: About,
+    LocationDisplay: LocationDisplay
+}
