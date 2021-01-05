@@ -1,6 +1,6 @@
 import React from "react";
 
-function NoMatch(props){
+function NoMatch(){
     return(
         <>
             <h1>No Match</h1>
